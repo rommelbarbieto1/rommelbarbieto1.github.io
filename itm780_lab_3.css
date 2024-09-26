@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif; 
     font-size: 12pt; 
-    background-color: #5b6ac0; 
+    background-color: #3f57e0; 
     color: #050e5e; 
     margin-top: 13pt;
     margin-left: 13px;
@@ -56,7 +56,7 @@ table {
 td {
     padding: 0.7%;
     border: 1px solid #b0c4de;
-    color: purple
+    color: rgb(66, 39, 165)
     font-size: 12px;
 }
 
