@@ -3,10 +3,7 @@ body {
     font-size: 12pt; 
     background-color: #3f57e0; 
     color: #050e5e; 
-    margin-top: 13pt;
-    margin-left: 13px;
-    margin-bottom: 13px;
-    margin-right: 13px; 
+    margin: 13pt 13px; 
 }
 
 h1 {
@@ -15,26 +12,24 @@ h1 {
     color: #000000; 
 }
 
-h2 {
+h2, h3, h4 {
     font-family: 'Arial', sans-serif; 
-    font-size: 2.5em; 
     color: black; 
+}
+
+h2 {
+    font-size: 2.5em; 
 }
 
 h3 {
-    font-family: 'Arial', sans-serif; 
     font-size: 2em; 
-    color: black; 
 }
 
 h4 { 
-    font-family: 'Arial', sans-serif; 
     font-size: 1.5em; 
-    color: black; 
 }
 
-a, 
-a:visited {
+a, a:visited {
     color: #1a63b7; 
     text-decoration: none;
 }
@@ -56,18 +51,12 @@ table {
 td {
     padding: 0.7%;
     border: 1px solid #b0c4de;
-    color: rgb(66, 39, 165)
+    color: rgb(66, 39, 165); /* Added missing semicolon */
     font-size: 12px;
 }
 
-.text-div { 
+.text-div, .link-div { 
     padding: 10px;
     background-color: #0b1fd0;
-    border: 1px solid #4c82c9;
-}
-
-.link-div {
-    padding: 10px;
-    background-color: #0b1fd0; 
     border: 1px solid #4c82c9;
 }
