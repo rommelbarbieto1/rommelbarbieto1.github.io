@@ -35,8 +35,8 @@ a, a:visited {
 }
 
 a:hover { 
-    color: #5b80e6;
-    text-decoration: underline;
+    color: #9db0e6;
+   background-color: #3f57e0;
 }
 
 a:active {
@@ -49,6 +49,7 @@ table {
 }
 
 td {
+    text-align: left;
     padding: 0.7%;
     border: 1px solid #b0c4de;
     color: rgb(66, 39, 165); /* Added missing semicolon */
