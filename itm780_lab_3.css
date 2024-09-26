@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif; 
     font-size: 12pt; 
     background-color: #6b8ba1; 
-    color: #815121; 
+    color: #000000; 
     margin: 20pt; 
 }
 
@@ -15,19 +15,19 @@ h1 {
 h2 {
     font-family: 'Arial', sans-serif; 
     font-size: 2.5em; 
-    color: #080000; 
+    color: #240205; 
 }
 
 h3 {
     font-family: 'Arial', sans-serif; 
     font-size: 2em; 
-    color: #080000; 
+    color: #3d0202; 
 }
 
 h4 { 
     font-family: 'Arial', sans-serif; 
     font-size: 1.5em; 
-    color: #080000; 
+    color: #270303; 
 }
 
 a, 
