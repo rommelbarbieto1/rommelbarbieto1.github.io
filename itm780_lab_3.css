@@ -3,7 +3,10 @@ body {
     font-size: 12pt; 
     background-color: #5b6ac0; 
     color: #050e5e; 
-    margin: 20pt; 
+    margin-top: 13pt;
+    margin-left: 13px;
+    margin-bottom: 13px;
+    margin-right: 13px; 
 }
 
 h1 {
@@ -51,8 +54,10 @@ table {
 }
 
 td {
-    padding: 10px;
+    padding: 0.7%;
     border: 1px solid #b0c4de;
+    color: purple
+    font-size: 12px;
 }
 
 .text-div { 
