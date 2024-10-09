@@ -52,7 +52,7 @@ td {
     text-align: left;
     padding: 0.7%;
     border: 1px solid #b0c4de;
-    color: rgb(66, 39, 165); /* Added missing semicolon */
+    color: rgb(66, 39, 165);
     font-size: 12px;
 }
 
