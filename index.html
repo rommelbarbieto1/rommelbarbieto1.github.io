@@ -31,7 +31,7 @@
                 <a href="#">Portfolio</a>
                 <ul class="submenu">
                     <li><a href="#">Projects</a></li>
-                    <li><a href="#">Resume</a></li> 
+                    <li><a href="https://raw.githubusercontent.com/rommelbarbieto1/rommelbarbieto1.github.io/main/Resume%20Rommel%20Barbieto.pdf" target="_blank">Resume</a></li> <!-- Direct link to Resume -->
                 </ul>
             </li>
         </ul>
@@ -49,6 +49,8 @@
         <li>B.Comm Business Technology Management at Toronto Metropolitan University, 2020 - present</li>
     </ul>
     <p>CGPA: 3.02</p>
+    
+    <h2 id="resumeSection">Resume:</h2> 
     <p><strong><a href="https://raw.githubusercontent.com/rommelbarbieto1/rommelbarbieto1.github.io/main/Resume%20Rommel%20Barbieto.pdf" target="_blank">View my Resume</a></strong></p>
 
     <h2>About My Program:</h2>
@@ -89,14 +91,15 @@
     <small>Copyright  © 2024 Rommel Barbieto. All Rights Reserved.</small>
 
     <script>
-     
+        // Function to enlarge the image
         function enlargeImage(img) {
             const overlay = document.getElementById("overlay");
             const overlayImg = document.getElementById("overlay-img");
             overlay.style.display = "block";
-            overlayImg.src = img.src; 
+            overlayImg.src = img.src; // Set the source of the overlay image
         }
 
+        // Function to close the enlarged image
         function closeImage() {
             const overlay = document.getElementById("overlay");
             overlay.style.display = "none";
