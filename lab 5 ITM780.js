@@ -9,8 +9,8 @@ document.getElementById("nameButton").onclick = function() {
 };
 
 document.getElementaryById("Image").onclick = function() {
-    this.style.width = "200px";
-    this.style.height = "200px";
+    this.style.width = "50px";
+    this.style.height = "50px";
 };
 
 function hover(element) {
@@ -19,4 +19,15 @@ function hover(element) {
 
 function unhover(element) {
     element.style.color = "";
+}
+
+document.getElementById("profilepic").onclick = function() {
+    var overlay = document.getElementById("overlay");
+    var overlayImg = document.getElementById("overlay-img");
+    overlayImg.src = this.src; 
+    overlay.style.display = "flex"; 
+}
+
+function closeImage() {
+    document.getElementById("overlay").style.display = "none"; 
 }
