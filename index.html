@@ -6,6 +6,24 @@
     <link rel="stylesheet" href="itm780_lab_3.css"> 
     <script src="lab 5 ITM780.js" defer></script> 
 </head>
+<h2>Navigation Menu</h2>
+    <nav>
+        <ul id="navMenu">
+            <li onmouseover="hover(this)" onmouseout="unhover(this)">
+                <a href="#">Home</a>
+            </li>
+            <li onmouseover="hover(this)" onmouseout="unhover(this)">
+                <a href="#">About Me</a>
+            </li>
+            <li onmouseover="hover(this)" onmouseout="unhover(this)">
+                <a href="#">Portfolio</a>
+                <ul class="submenu">
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Resume</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 <body>
 
     <h1>Rommel Barbieto</h1>
@@ -25,6 +43,8 @@
 
     <h2>My Photo:</h2>
 
+    <img src="https://github.com/rommelbarbieto1/rommelbarbieto1.github.io/blob/main/profilepic.jpg?raw=true" alt="Your Image" id="profilepic">
+
     <img id="myImage" src="images/myphoto.jpg" alt="My Photo" style="width: 200px; cursor: pointer;">
 
     <h2>About My Program:</h2>
@@ -36,25 +56,6 @@
         <li>ITM200 - Fundamentals of Programming</li>
         <li>ITM415 - Business Process Design</li>
     </ul>
-
-    <h2>Navigation Menu</h2>
-    <nav>
-        <ul id="navMenu">
-            <li onmouseover="hover(this)" onmouseout="unhover(this)">
-                <a href="#">Home</a>
-            </li>
-            <li onmouseover="hover(this)" onmouseout="unhover(this)">
-                <a href="#">About Me</a>
-            </li>
-            <li onmouseover="hover(this)" onmouseout="unhover(this)">
-                <a href="#">Portfolio</a>
-                <ul class="submenu">
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Resume</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
 
     <h2>Educational Awards:</h2>
     <h3>Mary Ward Catholic Secondary School</h3>
