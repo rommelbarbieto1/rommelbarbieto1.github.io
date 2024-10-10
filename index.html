@@ -11,13 +11,14 @@
     <h1>Rommel Barbieto</h1>
     
     <h2>My Profile Picture</h2>
-    <img id="profile-pic" src="profilepic.jpg" alt="My Profile Picture" style="cursor: pointer; width: 200px;">
+    <img id="profile-pic" src="profilepic.jpg" alt="My Profile Picture" style="cursor: pointer; width: 200px;" onclick="enlargeImage(this);">
     
     <div id="overlay" class="overlay" style="display: none;">
         <span class="close" onclick="closeImage()">&times;</span>
         <img class="overlay-content" id="overlay-img" src="" alt="Enlarged Image">
     </div>
-<h2>Navigation Menu</h2>
+
+    <h2>Navigation Menu</h2>
     <nav>
         <ul id="navMenu">
             <li onmouseover="hover(this)" onmouseout="unhover(this)">
@@ -30,14 +31,12 @@
                 <a href="#">Portfolio</a>
                 <ul class="submenu">
                     <li><a href="#">Projects</a></li>
+                    <li><a href="#">Resume</a></li> 
                 </ul>
             </li>
         </ul>
     </nav>
-<body>
 
-    <h1>Rommel Barbieto</h1>
-    
     <h2>About Me:</h2>
     <p>Hello! My name is Rommel Barbieto and I am a 3rd year BTM Student! I like to play video games, play basketball, and work out at the gym!</p>
 
@@ -45,22 +44,15 @@
     <p id="displayName"></p>
 
     <h2>Education:</h2>
-<ul>
-    <li>Mary Ward Catholic Secondary School, September 2016 - June 2020</li>
-    <li>B.Comm Business Technology Management at Toronto Metropolitan University, 2020 - present</li>
-</ul>
-<p>CGPA: 3.02</p>
-<p><strong><a href="https://raw.githubusercontent.com/rommelbarbieto1/rommelbarbieto1.github.io/main/Resume%20Rommel%20Barbieto.pdf" target="_blank">View my Resume</a></strong></p>
-
-<h2>Resume:</h2>
-<p><strong><a href="https://raw.githubusercontent.com/rommelbarbieto1/rommelbarbieto1.github.io/main/Resume%20Rommel%20Barbieto.pdf" target="_blank">View my Resume</a></strong></p>
-
-    <img src="https://github.com/rommelbarbieto1/rommelbarbieto1.github.io/blob/main/profilepic.jpg?raw=true" alt="Your Image" id="profilepic">
-
-    <img id="myImage" src="images/myphoto.jpg" alt="My Photo" style="width: 200px; cursor: pointer;">
+    <ul>
+        <li>Mary Ward Catholic Secondary School, September 2016 - June 2020</li>
+        <li>B.Comm Business Technology Management at Toronto Metropolitan University, 2020 - present</li>
+    </ul>
+    <p>CGPA: 3.02</p>
+    <p><strong><a href="https://raw.githubusercontent.com/rommelbarbieto1/rommelbarbieto1.github.io/main/Resume%20Rommel%20Barbieto.pdf" target="_blank">View my Resume</a></strong></p>
 
     <h2>About My Program:</h2>
-    <h4> Business Technology Management, B.Comm at Ted Rogers School of Management, Toronto Metropolitan University</h4>
+    <h4>Business Technology Management, B.Comm at Ted Rogers School of Management, Toronto Metropolitan University</h4>
     <h4>Courses:</h4>
     <ul>
         <li>ITM780 - Web Design and Management</li>
@@ -95,5 +87,20 @@
     </ul>
 
     <small>Copyright  © 2024 Rommel Barbieto. All Rights Reserved.</small>
+
+    <script>
+     
+        function enlargeImage(img) {
+            const overlay = document.getElementById("overlay");
+            const overlayImg = document.getElementById("overlay-img");
+            overlay.style.display = "block";
+            overlayImg.src = img.src; 
+        }
+
+        function closeImage() {
+            const overlay = document.getElementById("overlay");
+            overlay.style.display = "none";
+        }
+    </script>
 </body>
 </html>
