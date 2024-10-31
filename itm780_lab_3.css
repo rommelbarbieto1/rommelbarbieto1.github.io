@@ -61,3 +61,13 @@ td {
     background-color: #0b1fd0;
     border: 1px solid #4c82c9;
 }
+
+/*Portrait image*/
+img {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    border: 2px solid #420505;
+    border-radius: 3px;
+    width: 200px;
+}
