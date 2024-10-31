@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <title>Rommel Barbieto</title>
-    <link rel="stylesheet" href="itm780_lab_3.css"> 
-    <script src="lab 5 ITM780.js" defer></script> 
+    <link rel="stylesheet" href="itm780_lab_3.css">
+    <script src="lab 5 ITM780.js" defer></script> <!-- JS file for form handling -->
 </head>
 <body>
 
@@ -19,85 +19,68 @@
     </div>
 
     <h2>Navigation Menu</h2>
-<nav>
-    <ul id="navMenu">
-        <li onmouseover="hover(this)" onmouseout="unhover(this)">
-            <a href="#">Home</a>
-        </li>
-        <li class="dropdown" onmouseover="hover(this)" onmouseout="unhover(this)">
-            <a href="#">My University</a>
-            <ul class="submenu">
-                <li><a href="https://www.torontomu.ca" target="_blank">TMU Homepage</a></li>
-                <li><a href="https://www.torontomu.ca/bachelor-of-commerce/programs/business-technology-management/" target="_blank">BTM Program</a></li>
-            </ul>
-        </li>
-        <li onmouseover="hover(this)" onmouseout="unhover(this)">
-            <a href="#">Portfolio</a>
-            <ul class="submenu">
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="https://raw.githubusercontent.com/rommelbarbieto1/rommelbarbieto1.github.io/main/Resume%20Rommel%20Barbieto.pdf" target="_blank">Resume</a></li>
-            </ul>
-        </li>
-    </ul>
-</nav>
+    <nav>
+        <ul id="navMenu">
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#">My University</a>
+                <ul class="submenu">
+                    <li><a href="https://www.torontomu.ca" target="_blank">TMU Homepage</a></li>
+                    <li><a href="https://www.torontomu.ca/bachelor-of-commerce/programs/business-technology-management/" target="_blank">BTM Program</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Portfolio</a>
+                <ul class="submenu">
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="https://raw.githubusercontent.com/rommelbarbieto1/rommelbarbieto1.github.io/main/Resume%20Rommel%20Barbieto.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 
-    
+    <h2>Contact Form</h2>
+    <form id="contactForm">
+        <label for="name">Name:</label> <!-- Single Text Field -->
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label> <!-- Email Field -->
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="dob">Date of Birth:</label> <!-- Date Picker -->
+        <input type="date" id="dob" name="dob"><br>
+
+        <label>Favorite Color:</label> <!-- Radio Buttons -->
+        <input type="radio" id="colorRed" name="color" value="Red">
+        <label for="colorRed">Red</label>
+        <input type="radio" id="colorBlue" name="color" value="Blue">
+        <label for="colorBlue">Blue</label><br>
+
+        <label>Hobbies:</label> <!-- Checkboxes -->
+        <input type="checkbox" id="hobbySports" name="hobbies" value="Sports">
+        <label for="hobbySports">Sports</label>
+        <input type="checkbox" id="hobbyMusic" name="hobbies" value="Music">
+        <label for="hobbyMusic">Music</label><br>
+
+        <label for="country">Country:</label> <!-- Select Dropdown -->
+        <select id="country" name="country">
+            <option value="Canada">Canada</option>
+            <option value="USA">USA</option>
+            <option value="Other">Other</option>
+        </select><br>
+
+        <label for="message">About Yourself:</label> <!-- Multiple Text Field (Textarea) -->
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+
+        <button type="button" onclick="saveFormData()">Submit</button> <!-- Submit Button -->
+        <button type="reset" onclick="clearFormData()">Clear</button> <!-- Clear Button -->
+    </form>
 
     <h2>About Me:</h2>
     <p>Hello! My name is Rommel Barbieto and I am a 3rd year BTM Student! I like to play video games, play basketball, and work out at the gym!</p>
 
-    <button id="nameButton">Enter Your Name</button>
-    <p id="displayName"></p>
-
-    <h2>Education:</h2>
-    <ul>
-        <li>Mary Ward Catholic Secondary School, September 2016 - June 2020</li>
-        <li>B.Comm Business Technology Management at Toronto Metropolitan University, 2020 - present</li>
-    </ul>
-    <p>CGPA: 3.02</p>
-    
-    <h2 id="resumeSection">Resume:</h2> 
-    <p><strong><a href="https://raw.githubusercontent.com/rommelbarbieto1/rommelbarbieto1.github.io/main/Resume%20Rommel%20Barbieto.pdf" target="_blank">View my Resume</a></strong></p>
-
-    <h2>About My Program:</h2>
-    <h4>Business Technology Management, B.Comm at Ted Rogers School of Management, Toronto Metropolitan University</h4>
-    <h4>Courses:</h4>
-    <ul>
-        <li>ITM780 - Web Design and Management</li>
-        <li>ITM618 - Business Intelligence and Analytics</li>
-        <li>ITM200 - Fundamentals of Programming</li>
-        <li>ITM415 - Business Process Design</li>
-    </ul>
-
-    <h2>Educational Awards:</h2>
-    <h3>Mary Ward Catholic Secondary School</h3>
-    <ul>
-        <li>Received Honour Roll with an 80% grade average from 2017-2020</li>
-        <li>Received the STEM award for completing several STEM courses</li>
-    </ul>
-
-    <h3>Toronto Metropolitan University</h3>
-    <ul>
-        <li>Received entrance scholarship with a grade average of 80%</li>
-    </ul>
-
-    <h2>Extra-Curricular Activities:</h2>
-    <ol>
-        <li><strong>Basketball Intramurals:</strong> I grew up playing basketball and actively participate in Intramurals at TMU.</li>
-        <li><strong>Filipino Canadian Association (FILMET):</strong> I take pride in my Filipino heritage and enjoy celebrating our culture through FILMET.</li>
-    </ol>
-
-    <h2>Contact Information</h2>
-    <ul>
-        <li><strong>Email:</strong> <a rel="noopener noreferrer" href="mailto:rommel.barbieto@torontomu.ca">rommel.barbieto@torontomu.ca</a></li>
-        <li><strong>LinkedIn Profile:</strong> <a rel="noopener noreferrer" href="https://www.linkedin.com/in/rommel-barbieto-008a5b170/">View my LinkedIn</a></li>
-        <li><strong>Phone Number:</strong> 647-877-3791</li>
-    </ul>
-
-    <small>Copyright  © 2024 Rommel Barbieto. All Rights Reserved.</small>
-
     <script>
-        // Function to enlarge the image
+        // JavaScript for Enlarging Profile Image
         function enlargeImage(img) {
             const overlay = document.getElementById("overlay");
             const overlayImg = document.getElementById("overlay-img");
@@ -110,6 +93,27 @@
             const overlay = document.getElementById("overlay");
             overlay.style.display = "none";
         }
+
+        // JavaScript for Form Storage
+        function saveFormData() {
+            const formData = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                dob: document.getElementById("dob").value,
+                color: document.querySelector('input[name="color"]:checked')?.value || '',
+                hobbies: Array.from(document.querySelectorAll('input[name="hobbies"]:checked')).map(h => h.value),
+                country: document.getElementById("country").value,
+                message: document.getElementById("message").value,
+            };
+            localStorage.setItem("formData", JSON.stringify(formData));
+            alert("Form data saved to local storage!");
+        }
+
+        function clearFormData() {
+            localStorage.removeItem("formData");
+            alert("Form data cleared from local storage!");
+        }
     </script>
+
 </body>
 </html>
