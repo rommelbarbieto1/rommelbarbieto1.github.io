@@ -71,3 +71,11 @@ img {
     border-radius: 3px;
     width: 200px;
 }
+/*Image Zoom*/
+.imgZoom {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
+    width: 200px;
+  }
