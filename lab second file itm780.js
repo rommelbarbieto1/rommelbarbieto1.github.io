@@ -16,9 +16,10 @@ function unhover(element) {
     element.style.backgroundColor = "";
 }
 
+// Default background color and Text color
 function resetColors () {
-    document.body.style.backgroundColor = "#8B0000"; // Default background color
-    document.body.style.color = "#000000"; // Default text color
+    document.body.style.backgroundColor = "#8B0000"; 
+    document.body.style.color = "#000000"; 
 }
 function resetTextSize() {
     document.body.style.fontSize = "1em";
