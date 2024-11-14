@@ -15,3 +15,16 @@ function hover(element) {
 function unhover(element) {
     element.style.backgroundColor = "";
 }
+
+function resetColors () {
+    document.body.style.backgroundColor = "#8B0000"; // Default background color
+    document.body.style.color = "#000000"; // Default text color
+}
+function resetTextSize() {
+    document.body.style.fontSize = "1em";
+}
+function showAltText(imgId) {
+    const altText = document.getElementById(imgId).alt;
+    document.getElementById("AltText" + imgId.slice(-1)).innerText = altText;
+}
+
