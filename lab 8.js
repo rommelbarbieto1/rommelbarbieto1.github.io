@@ -17,4 +17,13 @@ function decreasingTextSize() {
 function resetTextSize() {
     currentSize = 15;
     document.body.style.fontSize = currentSize + 'px'
-}
+} 
+
+<script>
+    function showAltText(imgId) {
+        var img = document.getElementById(imgId);
+        var altText = img.alt;
+        var altTextElement = document.getElementById("AltText" + imgId.slice(-1));
+        altTextElement.textContent = altText;
+    }
+</script>
