@@ -195,7 +195,7 @@
         }
     </script>
 
-<!-- Video attachment-->
+<!-- Video attachment -->
 <section id="video-section">
     <h2>Video with accessibility components</h2>
     <figure>
@@ -204,38 +204,39 @@
         allowfullscreen>
         </iframe>
     </figure>
-    
 </section>
 
-<!--Resizing Text-->
+<!-- Resizing Text -->
 <!-- Add buttons for Text Size -->
 <div class="text-size-controls">
     <button onclick="enlargeText()">A+</button>
     <button onclick="resetTextSize()">Reset</button>
 </div>
+
 <script>
     function enlargeText() {
         document.body.style.fontSize = "2em";
     }
-    function resetText() {
+    function resetTextSize() {
         document.body.style.fontSize = "1em";
     }
 </script>
 
-<!--Colours for the colourblind-->
+<!-- Colours for the colourblind -->
 <section id="color-toggle">
     <h2>Colour Blind Accessibility</h2>
     <button onclick="changeColors()">Change Colours</button>
     <button onclick="resetColors()">Reset Colours</button>    
 </section>
+
 <script>
     function changeColors () {
-        document.body.style.backgroundColor = "#008000";
-        document.body.style.color = "#FFFF00";
+        document.body.style.backgroundColor = "#008000";  // Green background
+        document.body.style.color = "#FFFF00";  // Yellow text
     }
     function resetColors () {
-        documennt.body.style.backgroundColor = "#8B0000";
-        document.body.style.color = "000000";
+        document.body.style.backgroundColor = "#8B0000";  // Dark red background
+        document.body.style.color = "#000000";  // Black text
     }
 </script>
 
@@ -259,12 +260,12 @@
         <p id="AltText1"></p>
     </figure>
 
-
-    <!-- Notre Dame Basillica -->
+    <!-- Notre Dame Basilica -->
     <figure>
-        <img id="img2" src="image4.jpg" alt="Notre-Dame Basillica under renovation">
+        <img id="img2" src="image4.jpg" alt="Notre-Dame Basilica under renovation">
         <figcaption>110 Notre-Dame St W, Montreal, Quebec H2Y 1T1, June 8, 2024 </figcaption>
         <button class="alt-text-button" onclick="showAltText('img2')">Alt Text</button>
         <p id="AltText2"></p>
     </figure>
 </section>
+
