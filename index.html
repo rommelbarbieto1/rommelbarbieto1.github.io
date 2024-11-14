@@ -204,7 +204,31 @@
 <!--Resizing Text-->
 <!-- Add buttons for Text Size -->
 <div class="text-size-controls">
-    <button onclick="increaseTextSize()">A+</button>
-    <button onclick="decreaseTextSize()">A-</button>
+    <button onclick="enlargeText()">A+</button>
     <button onclick="resetTextSize()">Reset</button>
 </div>
+<script>
+    function enlargeText() {
+        document.body.style.fontSize = "2em";
+    }
+    function resetText() {
+        document.body.style.fontSize = "1em";
+    }
+</script>
+
+<!--Colours for the colourblind-->
+<section id="color-toggle">
+    <h2>Colour Blind Accessibility</h2>
+    <button onlclick="changeColors()"></button>Change Colours</button>
+    <button onclick="resetColors()"></button>Reset Colours</button>
+</section>
+<script>
+    function changeColors () {
+        document.body.style.backgroundColor = "#008000";
+        document.body.style.color = "#FFFF00";
+    }
+    function resetColors () {
+        documennt.body.style.backgroundColor = "#8B0000";
+        document.body.style.color = "000000";
+    }
+</script>
