@@ -197,3 +197,18 @@ button {
     padding: 7px;
     font-size: 16px
 }
+
+/* Media Arrangment */
+#video-section button {
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+#image-components figure {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#image-components img {
+    max-width: 100%;
+}
