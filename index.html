@@ -138,7 +138,53 @@
         <li><strong>Phone Number:</strong> 647-877-3791</li>
     </ul>
 
-    
+    <h2>Contact Form</h2>
+     <!-- Single Text Field -->
+    <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <!--Email Field-->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+         <!-- Date Picker -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"><br>
+        
+        <!-- Radio Buttons for Gender -->
+        <label>Gender:</label><br>
+        <input type="radio" id="genderMale" name="gender" value="Male">
+        <label for="genderMale">Male</label><br>
+        <input type="radio" id="genderFemale" name="gender" value="Female">
+        <label for="genderFemale">Female</label><br>
+        <input type="radio" id="genderOther" name="gender" value="Other">
+        <label for="genderOther">Other</label><br>
+        
+        <!-- Checkboxes -->
+        <label>Hobbies:</label>
+        <input type="checkbox" id="hobbySports" name="hobbies" value="Sports">
+        <label for="hobbySports">Sports</label>
+        <input type="checkbox" id="hobbyMusic" name="hobbies" value="Music">
+        <label for="hobbyMusic">Music</label><br>
+        
+        <!-- Select Dropdown -->
+        <label for="country">Country:</label> 
+        <select id="country" name="country">
+            <option value="Canada">Canada</option>
+            <option value="USA">USA</option>
+            <option value="Other">Other</option>
+        </select><br>
+
+        <!-- Multiple Text Field  -->
+        <label for="message">About Yourself:</label> 
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+        
+        <!-- Submit Button -->
+        <button type="button" onclick="saveFormData()">Submit</button> 
+        <!-- Clear Button -->
+        <button type="reset" onclick="clearFormData()">Clear</button> 
+    </form>
 
     <script>
         // Function to enlarge the image

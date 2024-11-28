@@ -25,5 +25,5 @@ function resetTextSize() {
         var altText = img.alt;
         var altTextElement = document.getElementById("AltText" + imgId.slice(-1));
         altTextElement.textContent = altText;
-    }
+}
 </script>
