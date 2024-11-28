@@ -3,7 +3,7 @@ let currentSize = 15;
 
 // Increasing text size
 function increaseTextSize() {
-    currentSize += 1.5l;
+    currentSize += 1.5;
     document.body.style.fontSize = currentSize + 'px';
 }
 
