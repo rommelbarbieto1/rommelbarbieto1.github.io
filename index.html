@@ -16,7 +16,7 @@
     <h2>Toronto Metropolitan University Instagram</h2>
     <!-- Instagram Icon with Link -->
     <a href="https://www.instagram.com/torontomet/?hl=en" target="_blank">
-        <i class="fa fa-instagram" style="font-size:70px;color:#000000"></i>
+        <i class="fa fa-instagram" style="font-size:70px;color:#991a44"></i>
     </a>
     
     <h2>My Profile Picture</h2>
@@ -139,3 +139,34 @@
             const overlay = document.getElementById("overlay");
             const overlayImg = document.getElementById("overlay-img");
             overlay.style.display = "block";
+            overlayImg.src = img.src;
+        }
+
+        function closeImage() {
+            const overlay = document.getElementById("overlay");
+            overlay.style.display = "none";
+        }
+
+        // Save Form Data
+        function saveFormData() {
+            const formData = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                dob: document.getElementById("dob").value,
+                gender: document.querySelector('input[name="gender"]:checked').value,
+                hobbies: Array.from(document.querySelectorAll('input[name="hobbies"]:checked')).map(hobby => hobby.value),
+                country: document.getElementById("country").value,
+                message: document.getElementById("message").value
+            };
+            localStorage.setItem("formData", JSON.stringify(formData));
+            alert("Form data saved!");
+        }
+
+        // Clear Form Data
+        function clearFormData() {
+            document.getElementById("contactForm").reset();
+        }
+    </script>
+
+</body>
+</html>
