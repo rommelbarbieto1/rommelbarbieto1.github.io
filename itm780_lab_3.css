@@ -205,12 +205,12 @@ button {
 }
 
 #image-components figure {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     text-align: center;
 }
 
 #image-components img {
-    max-width: 100%;
-    width: 50%;
-    height: 100%;
+    max-width: 75%;
+    width: 25%;
+    height: 75%;
 }
