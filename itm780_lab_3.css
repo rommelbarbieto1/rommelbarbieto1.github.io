@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif; 
     font-size: 12pt; 
-    background-color: #f79595; 
+    background-color:#e2b8e4; 
     color: #000000de; 
     margin: 13pt 13px; 
 }
@@ -110,7 +110,7 @@ img {
 /*Styling Navagation Menu Styling*/
 
 nav {
-    background-color: #e2b8e4;
+    background-color: #f3dcf3;
     padding: 0px;
     margin: 1px;
     justify-content: center;
@@ -264,7 +264,7 @@ h2 {
     position: relative;
 }
 h1, h2, h6 {
-    background-color: #991a44; 
+    background-color: #9db0e6
     color: rgb(0, 0, 0); 
     padding: 10px 20px; 
     border-radius: 5px; 
