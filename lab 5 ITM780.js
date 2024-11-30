@@ -32,3 +32,14 @@ document.getElementById("profilepic").onclick = function() {
 function closeImage() {
     document.getElementById("overlay").style.display = "none"; 
 }
+
+function nameprompt() {
+    var message;
+    var your_name = prompt("Please enter your name:");
+    if (your_name == null || your_name == "") {
+        message = "Cancelled prompt. Please try again.";
+    } else {
+        message = "You are " + your_name + "!"
+    }
+    document.getElementById("ButtonPrompt").innerHTML = message;
+  }

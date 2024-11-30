@@ -15,18 +15,26 @@
         <script src="lab5_ITM780.js" defer></script>
     </head>
 <body>
+    <button onclick="nameprompt()">Enter Name</button>
+    <p id="NamePrompt"></p>
 
+    <script>
+        function nameprompt() {
+            var message;
+            var your_name = prompt("Please enter your name:");
+            if (your_name == null || your_name == "") {
+                message = "Error. Please try again.";
+            } else {
+                message = "You are " + your_name + "!";
+            }
+            document.getElementById("NamePrompt").innerHTML = message;
+        }
+    </script>
     <!--Page Header-->
     <h1>Rommel Barbieto</h1>
-
-    <!--Instagram Section-->
-    <h2>Toronto Metropolitan University Instagram</h2>
-
-    <!--Instagram Icon with Link-->
-    <a href="https://www.instagram.com/torontomet/?hl=en" target="_blank" class="instagram-link">
-        <i class="fab fa-instagram" style="font-size: 50px; color: #991a44;"></i>
-    </a>
-
+    </html>
+    <h2>About Me:</h2>
+    <p>Hello! My name is Rommel Barbieto and I am a 3rd year BTM Student! I like to play video games, play basketball, and work out at the gym!</p>
     </a>
     
     <h2>My Profile Picture</h2>
@@ -93,13 +101,15 @@
     <p>Ahrefs. (2023). What are backlinks? Why are they important for SEO? Retrieved November 27, 2024, from <a href="https://ahrefs.com" target="_blank">https://ahrefs.com</a></p>
     
     <p>Google Developers. (2023). Make images load faster. Retrieved November 27, 2024, from <a href="https://developers.google.com" target="_blank">https://developers.google.com</a></p>
-        
- </html>
-    <h2>About Me:</h2>
-    <p>Hello! My name is Rommel Barbieto and I am a 3rd year BTM Student! I like to play video games, play basketball, and work out at the gym!</p>
+    <!--Instagram Section-->
+    <h2>Toronto Metropolitan University Instagram</h2>
 
-    <button id="nameButton">Enter Your Name</button>
-    <p id="displayName"></p>
+    <!--Instagram Icon with Link-->
+    <a href="https://www.instagram.com/torontomet/?hl=en" target="_blank" class="instagram-link">
+        <i class="fab fa-instagram" style="font-size: 50px; color: #991a44;"></i>
+    </a>    
+ 
+
 
     <h2>Education:</h2>
     <ul>
@@ -147,10 +157,14 @@
     </ul>
 
     <h2>Contact Form</h2>
+    <p>If you have any questions, please do not hesitate to contact me by completeing the form below and I will get back to you as soon as possible.</p>
      <!-- Single Text Field -->
     <form id="contactForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br>
+        <label for="firstName">First Name:</label>
+        <input id="firstName" type="text" required>
+
+        <label for="lastName">Last Name:</label>
+        <input id="lastName" type="text" required>
 
         <!--Email Field-->
         <label for="email">Email:</label>
@@ -159,22 +173,24 @@
          <!-- Date Picker -->
         <label for="dob">Date of Birth:</label>
         <input type="date" id="dob" name="dob"><br>
+        <!-- Radio Buttons for Role -->
+         <p>       
+            Please choose the role that best describes you:
+        </p>
+    </div>
+        <p>
+            <input type="radio" value="A" name="choice"> Student <!-- Radio buttons for if they are a student-->
+            <input type="radio" value="B" name="choice"> Hiring Manager <!-- Radio buttons for if they are a previous employer-->
+            <input type="radio" value="C" name="choice"> Current Employer <!-- Radio buttons for if they are a current employer-->
+            <input type="radio" value="D" name="choice" checked> Other <!-- Radio buttons for if they are none of the options above-->
+        </p>
         
-        <!-- Radio Buttons for Gender -->
-        <label>Gender:</label><br>
-        <input type="radio" id="genderMale" name="gender" value="Male">
-        <label for="genderMale">Male</label><br>
-        <input type="radio" id="genderFemale" name="gender" value="Female">
-        <label for="genderFemale">Female</label><br>
-        <input type="radio" id="genderOther" name="gender" value="Other">
-        <label for="genderOther">Other</label><br>
-        
-        <!-- Checkboxes -->
-        <label>Hobbies:</label>
-        <input type="checkbox" id="hobbySports" name="hobbies" value="Sports">
-        <label for="hobbySports">Sports</label>
-        <input type="checkbox" id="hobbyMusic" name="hobbies" value="Music">
-        <label for="hobbyMusic">Music</label><br>
+        <!-- Checkboxes on how to contact -->
+        <label>contactWay:</label>
+        <input type="checkbox" id="contactWayEmail" name="contactWay" value="email">
+        <label for="contactWayEmail">Sports</label>
+        <input type="checkbox" id="contactWayPhoneNumber" name="contactWay" value="Phone Number">
+        <label for="contactWayPhoneNumber">Music</label><br>
         
         <!-- Select Dropdown -->
         <label for="country">Country:</label> 
