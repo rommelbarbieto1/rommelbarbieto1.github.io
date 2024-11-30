@@ -109,9 +109,11 @@ img {
 
 nav {
     background-color: #e2b8e4;
-    padding: 12px;
+    padding: 0px;
+    margin: 1px;
+    justify-content: center;
     text-align: center;
-    font-size: 25px
+    font-size: 30px
 }
 
 nav ul {
@@ -228,6 +230,7 @@ button {
 #video-section button {
     margin-top: 12px;
     margin-bottom: 6px;
+    text-align: center;
 }
 
 #image-components figure {
@@ -236,8 +239,8 @@ button {
 }
 
 #image-components img {
-    max-width: 10%;
-    width: 25%;
+    max-width: 25%;
+    width: 50%;
     height: 75%;
 }
 

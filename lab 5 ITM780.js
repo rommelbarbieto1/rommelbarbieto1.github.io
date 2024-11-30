@@ -46,3 +46,16 @@ function closeImage() {
 function zoom(element) {
     element.classList.toggle("imgZoom")
 }
+
+window.onload=function()
+	{
+		var user = document.getElementById("profile");
+		console.log(user.value); 
+		console.log(user.type); 
+	}
+
+var user = document.getElementById("profile"); 
+
+localStorage.setItem("profile");
+console.log(localStorage.getItem("profile"));
+localStorage.removeItem("profile");

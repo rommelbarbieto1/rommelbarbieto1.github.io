@@ -18,3 +18,12 @@ document.getElementById("clearButton").addEventListener("click", function () {
     localStorage.clear();
     alert("Form cleared!");
 });
+
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    
+    console.log("Form submitted!");
+
+    this.reset();
+});
