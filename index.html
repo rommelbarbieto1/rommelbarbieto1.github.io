@@ -8,11 +8,15 @@
         <!--Custom CSS-->
         <link rel="stylesheet" href="itm780_lab_3.css">
 
-        <!--Font Awesome CSS-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <!--React CSS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
 
         <!--JavaScript File-->
         <script src="lab5_ITM780.js" defer></script>
+
+        <!--Skeleton CSS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+
     </head>
 <body>
     <button onclick="nameprompt()">Enter Name</button>
@@ -25,12 +29,12 @@
             if (your_name == null || your_name == "") {
                 message = "Error. Please try again.";
             } else {
-                message = "You are " + your_name + "!";
+                message = "Hello, " + your_name + "!";
             }
             document.getElementById("NamePrompt").innerHTML = message;
         }
     </script>
-    <!--Page Header-->
+
     <h1>Rommel Barbieto</h1>
     </html>
     <h2>About Me:</h2>
@@ -38,12 +42,10 @@
     </a>
     
     <h2>My Profile Picture</h2>
-    <img id="profile-pic" src="profilepic.jpg" alt="My Profile Picture" style="cursor: pointer; width: 200px;" onclick="enlargeImage(this);">
-    
-    <div id="overlay" class="overlay" style="display: none;">
-        <span class="close" onclick="closeImage()">&times;</span>
-        <img class="overlay-content" id="overlay-img" src="" alt="Enlarged Image">
+    <div>
+        <img src="profilepic.jpg" alt="Image of Rommel Barbieto" onclick="zoom(this)">
     </div>
+
 
     <h2>Navigation Menu</h2>
 <nav>

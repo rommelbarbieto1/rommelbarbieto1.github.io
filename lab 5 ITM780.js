@@ -9,10 +9,21 @@ document.getElementById("nameButton").onclick = function() {
     }
 };
 // Create an image and make sure it is enlarged when clicked.
-document.getElementaryById("Image").onclick = function() {
-    this.style.width = "50px";
-    this.style.height = "50px";
-};
+
+function enlargeImage(img) {
+    var overlay = document.getElementById("overlay");
+    var overlayImage = document.getElementById("overlayImage");
+
+    overlay.style.display = "flex"; 
+    overlayImage.src = img.src;    
+}
+
+
+function closeImage() {
+    var overlay = document.getElementById("overlay");
+    overlay.style.display = "none"; // Hide the overlay
+}
+
 //Create a navigation menu with at least three navigation items and two menu items. 
 function hover(element) {
     element.style.color = "04AA6D"
@@ -32,14 +43,6 @@ document.getElementById("profilepic").onclick = function() {
 function closeImage() {
     document.getElementById("overlay").style.display = "none"; 
 }
-
-function nameprompt() {
-    var message;
-    var your_name = prompt("Please enter your name:");
-    if (your_name == null || your_name == "") {
-        message = "Cancelled prompt. Please try again.";
-    } else {
-        message = "You are " + your_name + "!"
-    }
-    document.getElementById("ButtonPrompt").innerHTML = message;
-  }
+function zoom(element) {
+    element.classList.toggle("imgZoom")
+}
